@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 97%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 20% 75% 5%;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "main empty aside"
+        "footer footer footer"
+    ;
+    gap: 10px;
+}
+
+.hijo {
+    width: 100%;
+    color: white;
+}
+
+header {
+    background-color: rgb(103, 163, 100);
+    grid-area: header;
+}
+
+main {
+
+    background-color: rgb(164, 206, 102);
+    grid-area: main;
+}
+
+form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+div {
+    background-color: rgb(85, 175, 60);
+    grid-area: empty;
+}
+
+aside {
+    background-color: rgb(7, 82, 8);
+    grid-area: aside;
+}
+
+footer {
+    background-color: rgb(111, 161, 111);
+    grid-area: footer;
+}
+
+h1{
+    text-align: center;
+   
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      
+      
+}
+
+h2{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body {
+    background-color: background: rgb(194, 238, 161);
+    background: linear-gradient(90deg, rgba(194, 238, 161, 0.7035189075630253) 45%, rgba(85, 156, 16, 0.3169642857142857) 91%, rgba(93, 165, 25, 1) 100%, rgba(108, 187, 31, 0.6558998599439776) 100%);
+}

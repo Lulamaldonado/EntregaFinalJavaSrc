@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./scss/estile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Aganola.secos</title>
+
+</head>
+
+<body class="contenedor">
+
+    <header class="hijo">
+        <h1>
+            Agranola.secos
+        </h1>
+
+    </header>
+
+    <main class="hijo">
+
+        <form action="listadoProductosGranola"></form>
+
+        <h2>Granola Base</h2>
+
+        <li><input type="checkbox" id="GranolaClasica" value="GC"> <label for="input1"> Granola Clasica</label></li>
+        <li><input type="checkbox" id="GranolaSinAz" value="CsZ"> <label for="input1"> Granola sin azúcar</label></li>
+        <li><input type="checkbox" id="GranolaConM" value="Gm"> <label for="input1"> Granola con Miel</label></li>
+        </form>
+
+        <button onclick id="guardarSelectionBtn">Guardar Selección</button>
+        </form>
+
+        <form action="listadoProductosGranola"></form>
+
+        <h2>Mantequeilla de mani</h2>
+
+        <li><input type="checkbox" id="Cclasica" value="Cclasica"> <label for="input1">Clasica</label></li>
+        <li><input type="checkbox" id="Ccrunch" value="valor1"> <label for="input1">Crunch</label></li>
+        <li><input type="checkbox" id="CconMiel" value="valor1"> <label for="input1">Crema con Miel</label></li>
+        </form>
+
+        <br><button onclick="guardarSelection()">Guardar Selección</button>
+
+
+    </main>
+
+    <div class="hijo">
+        <h2>Frutos secos</h2>
+
+        <br><label><input type="checkbox" name="product" value="producto1"> <label for="input1"> Nueces</label></br>
+        <br><label><input type="checkbox" name="product" value="producto2"> <label for="input1"> Almendras</label></br>
+        <br><label><input type="checkbox" name="product" value="producto3"> <label for="input1"> Castañas</label></br>
+        </form>
+
+        <button id="confirmBottom">Guardar Selección</button>
+        </form>
+
+
+    </div>
+    <aside class="hijo">
+        <h2>Carrito de compras</h2>
+
+        <div id="SelectedProducts"></div>
+    </aside>
+
+
+
+
+
+
+
+
+    <footer class="hijo"><i class="fab fa-facebook-f"></i></footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
